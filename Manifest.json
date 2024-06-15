@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Jocks Maker",
+    "description": "Get a new joke every day",
+    "version": "0.0.1",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
