@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Extention</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="main">
-        <h1>My Extention</h1>
-        <div class="countDown">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </div>
-        
+  <div class="main">
+    <div class="header">
+      <h1 id="titleTrack">Music Player</h1>
     </div>
+    <div class="image">
+      <img id="songImage" src="Image\music-alt.png" alt="">
+    </div>
+    <div class="search">
+      <input type="text" id="text" placeholder="Enter song name...">
+      <button id="btn">Search</button>
+    </div>
+    <div class="title">
+      <h2 id="musictitle"></h2>
+      <p id="singer"></p>
+    </div>
+    <div class="play">
+      <audio id="myaudio" controls>
+        <source id="audiosource" src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <p id="error" class="error-message"></p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
